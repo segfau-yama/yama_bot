@@ -1,0 +1,494 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2400 3800 0    50   Input ~ 0
+DTR
+Wire Wire Line
+	4000 4450 4000 4750
+Wire Wire Line
+	4100 4450 4200 4450
+$Comp
+L power:GND #PWR?
+U 1 1 634BD0D5
+P 5300 3400
+AR Path="/634BD0D5" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634BD0D5" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 5300 3150 50  0001 C CNN
+F 1 "GND" H 5305 3227 50  0000 C CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 634BD0DB
+P 5000 4000
+AR Path="/634BD0DB" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634BD0DB" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 5000 3850 50  0001 C CNN
+F 1 "+5V" H 5015 4173 50  0000 C CNN
+F 2 "" H 5000 4000 50  0001 C CNN
+F 3 "" H 5000 4000 50  0001 C CNN
+	1    5000 4000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5000 3600
+Wire Wire Line
+	5400 3400 5300 3400
+Connection ~ 5300 3400
+$Comp
+L Connector:USB_B_Micro USB_MB?
+U 1 1 634BD0E4
+P 5300 3800
+AR Path="/634BD0E4" Ref="USB_MB?"  Part="1" 
+AR Path="/634AEDBE/634BD0E4" Ref="USB1"  Part="1" 
+F 0 "USB1" H 5070 3697 50  0000 R CNN
+F 1 "USB_B_Micro" H 5070 3788 50  0000 R CNN
+F 2 "SamacSys_Parts:ZX62B5PA33" H 5450 3750 50  0001 C CNN
+F 3 "~" H 5450 3750 50  0001 C CNN
+	1    5300 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 3800 3000 3800
+Wire Wire Line
+	2400 3800 2650 3800
+Connection ~ 2650 3800
+$Comp
+L Device:C DTR_C?
+U 1 1 634BD0ED
+P 2650 3950
+AR Path="/634BD0ED" Ref="DTR_C?"  Part="1" 
+AR Path="/634AEDBE/634BD0ED" Ref="DTR_C1"  Part="1" 
+F 0 "DTR_C1" H 2765 3996 50  0000 L CNN
+F 1 "1u" H 2765 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 3800 50  0001 C CNN
+F 3 "~" H 2650 3950 50  0001 C CNN
+	1    2650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 634BD0F3
+P 2650 4100
+AR Path="/634BD0F3" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634BD0F3" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 2650 3850 50  0001 C CNN
+F 1 "GND" H 2655 3927 50  0000 C CNN
+F 2 "" H 2650 4100 50  0001 C CNN
+F 3 "" H 2650 4100 50  0001 C CNN
+	1    2650 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4400 4000
+NoConn ~ 3600 3800
+NoConn ~ 3600 3700
+NoConn ~ 3600 3600
+NoConn ~ 3600 3500
+Wire Wire Line
+	3350 4100 3600 4100
+Wire Wire Line
+	3600 4000 3350 4000
+Text GLabel 3350 4000 0    50   Input ~ 0
+USB_TX
+Text GLabel 3350 4100 0    50   Input ~ 0
+USB_RX
+Text GLabel 2400 2850 0    50   Input ~ 0
+RTS
+Wire Wire Line
+	3000 2850 2400 2850
+Wire Wire Line
+	3350 3050 3300 3050
+Wire Wire Line
+	3350 3400 3350 3050
+Wire Wire Line
+	3000 3400 3350 3400
+Connection ~ 3350 3050
+Wire Wire Line
+	3550 3050 3350 3050
+Wire Wire Line
+	3450 3600 3300 3600
+Wire Wire Line
+	3450 3250 3450 3600
+Wire Wire Line
+	3000 3250 3450 3250
+Connection ~ 3450 3600
+Wire Wire Line
+	3550 3600 3450 3600
+Wire Wire Line
+	3550 3400 3550 3600
+Wire Wire Line
+	3600 3400 3550 3400
+Wire Wire Line
+	3550 3300 3550 3050
+Wire Wire Line
+	3600 3300 3550 3300
+$Comp
+L Transistor_FET:BSS138 RTS_Q?
+U 1 1 634BD112
+P 3100 3050
+AR Path="/634BD112" Ref="RTS_Q?"  Part="1" 
+AR Path="/634AEDBE/634BD112" Ref="RTS_Q1"  Part="1" 
+F 0 "RTS_Q1" H 3305 3004 50  0000 L CNN
+F 1 "BSS138" H 3305 3095 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 2975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 3100 3050 50  0001 L CNN
+	1    3100 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 DTR_Q?
+U 1 1 634BD118
+P 3100 3600
+AR Path="/634BD118" Ref="DTR_Q?"  Part="1" 
+AR Path="/634AEDBE/634BD118" Ref="DTR_Q1"  Part="1" 
+F 0 "DTR_Q1" H 3305 3554 50  0000 L CNN
+F 1 "BSS138" H 3305 3645 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 3100 3600 50  0001 L CNN
+	1    3100 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3800 4400 3800
+Wire Wire Line
+	4400 3700 5000 3700
+$Comp
+L power:GND #PWR?
+U 1 1 634BD126
+P 4200 4750
+AR Path="/634BD126" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634BD126" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 4200 4500 50  0001 C CNN
+F 1 "GND" H 4205 4577 50  0000 C CNN
+F 2 "" H 4200 4750 50  0001 C CNN
+F 3 "" H 4200 4750 50  0001 C CNN
+	1    4200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CH340_C?
+U 1 1 634BD12C
+P 4200 4600
+AR Path="/634BD12C" Ref="CH340_C?"  Part="1" 
+AR Path="/634AEDBE/634BD12C" Ref="CH340_C1"  Part="1" 
+F 0 "CH340_C1" V 4452 4600 50  0000 C CNN
+F 1 "0.1u" V 4361 4600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 4450 50  0001 C CNN
+F 3 "~" H 4200 4600 50  0001 C CNN
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3100 4000 2850
+Wire Wire Line
+	4100 4450 4100 4300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 634BD134
+P 4000 4750
+AR Path="/634BD134" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634BD134" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 4000 4600 50  0001 C CNN
+F 1 "+3.3V" H 4015 4923 50  0000 C CNN
+F 2 "" H 4000 4750 50  0001 C CNN
+F 3 "" H 4000 4750 50  0001 C CNN
+	1    4000 4750
+	-1   0    0    1   
+$EndComp
+Connection ~ 4100 4450
+Wire Wire Line
+	4000 4450 4100 4450
+$Comp
+L power:GND #PWR?
+U 1 1 634BD13C
+P 4000 2850
+AR Path="/634BD13C" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634BD13C" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 4000 2600 50  0001 C CNN
+F 1 "GND" H 4005 2677 50  0000 C CNN
+F 2 "" H 4000 2850 50  0001 C CNN
+F 3 "" H 4000 2850 50  0001 C CNN
+	1    4000 2850
+	-1   0    0    1   
+$EndComp
+Connection ~ 4000 4450
+Wire Wire Line
+	4000 4450 4000 4300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 634DDACD
+P 6550 3300
+AR Path="/634DDACD" Ref="SW?"  Part="1" 
+AR Path="/634AEDBE/634DDACD" Ref="SW1"  Part="1" 
+F 0 "SW1" H 6550 3585 50  0000 C CNN
+F 1 "SW_Push" H 6550 3494 50  0000 C CNN
+F 2 "SamacSys_Parts:TVAF06A020BR" H 6550 3500 50  0001 C CNN
+F 3 "~" H 6550 3500 50  0001 C CNN
+	1    6550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 634DDAD3
+P 6550 4200
+AR Path="/634DDAD3" Ref="SW?"  Part="1" 
+AR Path="/634AEDBE/634DDAD3" Ref="SW2"  Part="1" 
+F 0 "SW2" H 6550 4485 50  0000 C CNN
+F 1 "SW_Push" H 6550 4394 50  0000 C CNN
+F 2 "SamacSys_Parts:TVAF06A020BR" H 6550 4400 50  0001 C CNN
+F 3 "~" H 6550 4400 50  0001 C CNN
+	1    6550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C SW_C?
+U 1 1 634DDAD9
+P 6550 3600
+AR Path="/634DDAD9" Ref="SW_C?"  Part="1" 
+AR Path="/634AEDBE/634DDAD9" Ref="SW_C1"  Part="1" 
+F 0 "SW_C1" H 6665 3646 50  0000 L CNN
+F 1 "0.1u" H 6665 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 3450 50  0001 C CNN
+F 3 "~" H 6550 3600 50  0001 C CNN
+	1    6550 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C SW_C?
+U 1 1 634DDADF
+P 6550 4500
+AR Path="/634DDADF" Ref="SW_C?"  Part="1" 
+AR Path="/634AEDBE/634DDADF" Ref="SW_C2"  Part="1" 
+F 0 "SW_C2" H 6665 4546 50  0000 L CNN
+F 1 "0.1u" H 6665 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 4350 50  0001 C CNN
+F 3 "~" H 6550 4500 50  0001 C CNN
+	1    6550 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 3600 6950 3600
+Wire Wire Line
+	6950 3600 6950 3300
+Wire Wire Line
+	6150 3600 6400 3600
+Text GLabel 7300 3300 2    50   Input ~ 0
+RTS
+Text GLabel 7300 4200 2    50   Input ~ 0
+DTR
+Wire Wire Line
+	6950 3300 7300 3300
+Wire Wire Line
+	6750 4200 6950 4200
+Wire Wire Line
+	6700 4500 6950 4500
+Wire Wire Line
+	6400 4500 6150 4500
+$Comp
+L power:GND #PWR?
+U 1 1 634DDAEE
+P 6150 4600
+AR Path="/634DDAEE" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634DDAEE" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 6150 4350 50  0001 C CNN
+F 1 "GND" H 6155 4427 50  0000 C CNN
+F 2 "" H 6150 4600 50  0001 C CNN
+F 3 "" H 6150 4600 50  0001 C CNN
+	1    6150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 634DDAF4
+P 6150 3700
+AR Path="/634DDAF4" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634DDAF4" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 6150 3450 50  0001 C CNN
+F 1 "GND" H 6155 3527 50  0000 C CNN
+F 2 "" H 6150 3700 50  0001 C CNN
+F 3 "" H 6150 3700 50  0001 C CNN
+	1    6150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3600 6150 3700
+Wire Wire Line
+	6150 4500 6150 4600
+$Comp
+L power:+5V #PWR?
+U 1 1 634DDAFC
+P 8100 3550
+AR Path="/634DDAFC" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634DDAFC" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 8100 3400 50  0001 C CNN
+F 1 "+5V" H 8115 3723 50  0000 C CNN
+F 2 "" H 8100 3550 50  0001 C CNN
+F 3 "" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R PW_R?
+U 1 1 634DDB08
+P 7700 3800
+AR Path="/634DDB08" Ref="PW_R?"  Part="1" 
+AR Path="/634AEDBE/634DDB08" Ref="PW_R1"  Part="1" 
+F 0 "PW_R1" H 7770 3846 50  0000 L CNN
+F 1 "2k" H 7770 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 3800 50  0001 C CNN
+F 3 "~" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED PW_LED?
+U 1 1 634DDB0E
+P 7700 4100
+AR Path="/634DDB0E" Ref="PW_LED?"  Part="1" 
+AR Path="/634AEDBE/634DDB0E" Ref="PW_LED1"  Part="1" 
+F 0 "PW_LED1" H 7693 4317 50  0000 C CNN
+F 1 "LED" H 7693 4226 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7700 4100 50  0001 C CNN
+F 3 "~" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C RG1_C?
+U 1 1 634DDB14
+P 8100 3950
+AR Path="/634DDB14" Ref="RG1_C?"  Part="1" 
+AR Path="/634AEDBE/634DDB14" Ref="RG_INPUT1"  Part="1" 
+F 0 "RG_INPUT1" H 8215 3996 50  0000 L CNN
+F 1 "10u" H 8215 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8138 3800 50  0001 C CNN
+F 3 "~" H 8100 3950 50  0001 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C RG1_C?
+U 1 1 634DDB1A
+P 9000 3950
+AR Path="/634DDB1A" Ref="RG1_C?"  Part="1" 
+AR Path="/634AEDBE/634DDB1A" Ref="RG1_C2"  Part="1" 
+F 0 "RG1_C2" H 9115 3996 50  0000 L CNN
+F 1 "10u" H 9115 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9038 3800 50  0001 C CNN
+F 3 "~" H 9000 3950 50  0001 C CNN
+	1    9000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3550 8100 3550
+Connection ~ 8100 3550
+Wire Wire Line
+	8100 3550 8100 3800
+Wire Wire Line
+	8100 4100 8100 4350
+Wire Wire Line
+	8100 4350 8550 4350
+Wire Wire Line
+	8550 4350 8550 3850
+Wire Wire Line
+	9000 4100 9000 4350
+Wire Wire Line
+	9000 4350 8550 4350
+Connection ~ 8550 4350
+Wire Wire Line
+	8850 3550 9000 3550
+Wire Wire Line
+	9000 3550 9000 3800
+$Comp
+L power:GND #PWR?
+U 1 1 634DDB2B
+P 8550 4350
+AR Path="/634DDB2B" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634DDB2B" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 8550 4100 50  0001 C CNN
+F 1 "GND" H 8555 4177 50  0000 C CNN
+F 2 "" H 8550 4350 50  0001 C CNN
+F 3 "" H 8550 4350 50  0001 C CNN
+	1    8550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4250 7700 4350
+Wire Wire Line
+	7700 4350 8100 4350
+Connection ~ 8100 4350
+Wire Wire Line
+	8100 3550 7700 3550
+Wire Wire Line
+	7700 3550 7700 3650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 634DDB36
+P 9000 3550
+AR Path="/634DDB36" Ref="#PWR?"  Part="1" 
+AR Path="/634AEDBE/634DDB36" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 9000 3400 50  0001 C CNN
+F 1 "+3.3V" H 9015 3723 50  0000 C CNN
+F 2 "" H 9000 3550 50  0001 C CNN
+F 3 "" H 9000 3550 50  0001 C CNN
+	1    9000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4500 6950 4200
+Connection ~ 6950 4200
+Wire Wire Line
+	6950 4200 7300 4200
+Wire Wire Line
+	6350 4200 6150 4200
+Wire Wire Line
+	6150 4200 6150 4500
+Connection ~ 6150 4500
+Wire Wire Line
+	6950 3300 6750 3300
+Connection ~ 6950 3300
+Wire Wire Line
+	6350 3300 6150 3300
+Wire Wire Line
+	6150 3300 6150 3600
+Connection ~ 6150 3600
+Connection ~ 9000 3550
+$Comp
+L Interface_USB:CH340G UD1
+U 1 1 63012F7D
+P 4000 3700
+F 0 "UD1" H 4000 2919 50  0000 C CNN
+F 1 "CH340G" H 4000 3010 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4050 3150 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 3650 4500 50  0001 C CNN
+	1    4000 3700
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4400 3300
+NoConn ~ 4400 3500
+$Comp
+L Regulator_Linear:LM1117-3.3 RG1
+U 1 1 6300F9AC
+P 8550 3550
+F 0 "RG1" H 8550 3792 50  0000 C CNN
+F 1 "LM1117-3.3" H 8550 3701 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT230P700X180-4N" H 8550 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 8550 3550 50  0001 C CNN
+	1    8550 3550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

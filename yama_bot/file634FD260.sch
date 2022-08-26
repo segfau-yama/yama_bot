@@ -1,0 +1,1080 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:TB6643KQ,8 MD?
+U 1 1 63520D79
+P 2600 3300
+AR Path="/63520D79" Ref="MD?"  Part="1" 
+AR Path="/634FD261/63520D79" Ref="MD?"  Part="1" 
+F 0 "MD?" H 2942 2435 50  0000 C CNN
+F 1 "TB6643KQ,8" H 2942 2526 50  0000 C CNN
+F 2 "SamacSys_Parts:HSIP7-P-2.54A" H 3350 3400 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11271&prodName=TB6643KQ" H 3350 3300 50  0001 L CNN
+F 4 "Bi-CMOS Integrated Circuit Silicon Monolithic" H 3350 3200 50  0001 L CNN "Description"
+F 5 "" H 3350 3100 50  0001 L CNN "Height"
+F 6 "" H 3350 3000 50  0001 L CNN "RS Part Number"
+F 7 "" H 3350 2900 50  0001 L CNN "RS Price/Stock"
+F 8 "Toshiba" H 3350 2800 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB6643KQ,8" H 3350 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2600 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C MT_C?
+U 1 1 63520D7F
+P 3250 3000
+AR Path="/63520D7F" Ref="MT_C?"  Part="1" 
+AR Path="/634FD261/63520D7F" Ref="MT_C?"  Part="1" 
+F 0 "MT_C?" H 3365 3046 50  0000 L CNN
+F 1 "0.1u" H 3365 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 2850 50  0001 C CNN
+F 3 "~" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2900 2900 2900
+Wire Wire Line
+	2900 2900 2900 2850
+Wire Wire Line
+	2900 2850 3250 2850
+Wire Wire Line
+	2600 3100 2900 3100
+Wire Wire Line
+	2900 3100 2900 3150
+Wire Wire Line
+	2900 3150 3250 3150
+$Comp
+L power:+12V #PWR?
+U 1 1 63520D8B
+P 2600 2700
+AR Path="/63520D8B" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520D8B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 2550 50  0001 C CNN
+F 1 "+12V" V 2615 2828 50  0000 L CNN
+F 2 "" H 2600 2700 50  0001 C CNN
+F 3 "" H 2600 2700 50  0001 C CNN
+	1    2600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63520D91
+P 2600 3000
+AR Path="/63520D91" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520D91" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 2750 50  0001 C CNN
+F 1 "GND" V 2605 2872 50  0000 R CNN
+F 2 "" H 2600 3000 50  0001 C CNN
+F 3 "" H 2600 3000 50  0001 C CNN
+	1    2600 3000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2900 3200 2    50   Input ~ 0
+MT1_IN2
+Text GLabel 2900 3300 2    50   Input ~ 0
+MT1_IN1
+Wire Wire Line
+	2600 3200 2900 3200
+Wire Wire Line
+	2600 3300 2900 3300
+$Comp
+L SamacSys_Parts:TB6643KQ,8 MD?
+U 1 1 63520DA1
+P 5250 3300
+AR Path="/63520DA1" Ref="MD?"  Part="1" 
+AR Path="/634FD261/63520DA1" Ref="MD?"  Part="1" 
+F 0 "MD?" H 5592 2435 50  0000 C CNN
+F 1 "TB6643KQ,8" H 5592 2526 50  0000 C CNN
+F 2 "SamacSys_Parts:HSIP7-P-2.54A" H 6000 3400 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11271&prodName=TB6643KQ" H 6000 3300 50  0001 L CNN
+F 4 "Bi-CMOS Integrated Circuit Silicon Monolithic" H 6000 3200 50  0001 L CNN "Description"
+F 5 "" H 6000 3100 50  0001 L CNN "Height"
+F 6 "" H 6000 3000 50  0001 L CNN "RS Part Number"
+F 7 "" H 6000 2900 50  0001 L CNN "RS Price/Stock"
+F 8 "Toshiba" H 6000 2800 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB6643KQ,8" H 6000 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5250 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C MT_C?
+U 1 1 63520DA7
+P 5900 3000
+AR Path="/63520DA7" Ref="MT_C?"  Part="1" 
+AR Path="/634FD261/63520DA7" Ref="MT_C?"  Part="1" 
+F 0 "MT_C?" H 6015 3046 50  0000 L CNN
+F 1 "0.1u" H 6015 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5938 2850 50  0001 C CNN
+F 3 "~" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2900 5550 2900
+Wire Wire Line
+	5550 2900 5550 2850
+Wire Wire Line
+	5550 2850 5900 2850
+Wire Wire Line
+	5250 3100 5550 3100
+Wire Wire Line
+	5550 3100 5550 3150
+Wire Wire Line
+	5550 3150 5900 3150
+$Comp
+L power:+12V #PWR?
+U 1 1 63520DB3
+P 5250 2700
+AR Path="/63520DB3" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520DB3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5250 2550 50  0001 C CNN
+F 1 "+12V" V 5265 2828 50  0000 L CNN
+F 2 "" H 5250 2700 50  0001 C CNN
+F 3 "" H 5250 2700 50  0001 C CNN
+	1    5250 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63520DB9
+P 5250 3000
+AR Path="/63520DB9" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520DB9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5250 2750 50  0001 C CNN
+F 1 "GND" V 5255 2872 50  0000 R CNN
+F 2 "" H 5250 3000 50  0001 C CNN
+F 3 "" H 5250 3000 50  0001 C CNN
+	1    5250 3000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5550 3200 2    50   Input ~ 0
+MT2_IN2
+Text GLabel 5550 3300 2    50   Input ~ 0
+MT2_IN1
+Wire Wire Line
+	5250 3200 5550 3200
+Wire Wire Line
+	5250 3300 5550 3300
+$Comp
+L Device:C MT_C?
+U 1 1 63520DC3
+P 3250 4150
+AR Path="/63520DC3" Ref="MT_C?"  Part="1" 
+AR Path="/634FD261/63520DC3" Ref="MT_C?"  Part="1" 
+F 0 "MT_C?" H 3365 4196 50  0000 L CNN
+F 1 "0.1u" H 3365 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 4000 50  0001 C CNN
+F 3 "~" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4050 2900 4050
+Wire Wire Line
+	2900 4050 2900 4000
+Wire Wire Line
+	2900 4000 3250 4000
+Wire Wire Line
+	2600 4250 2900 4250
+Wire Wire Line
+	2900 4250 2900 4300
+Wire Wire Line
+	2900 4300 3250 4300
+$Comp
+L power:+12V #PWR?
+U 1 1 63520DCF
+P 2600 3850
+AR Path="/63520DCF" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520DCF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 3700 50  0001 C CNN
+F 1 "+12V" V 2615 3978 50  0000 L CNN
+F 2 "" H 2600 3850 50  0001 C CNN
+F 3 "" H 2600 3850 50  0001 C CNN
+	1    2600 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63520DD5
+P 2600 4150
+AR Path="/63520DD5" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520DD5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 3900 50  0001 C CNN
+F 1 "GND" V 2605 4022 50  0000 R CNN
+F 2 "" H 2600 4150 50  0001 C CNN
+F 3 "" H 2600 4150 50  0001 C CNN
+	1    2600 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2900 4350 2    50   Input ~ 0
+MT3_IN2
+Text GLabel 2900 4450 2    50   Input ~ 0
+MT3_IN1
+Wire Wire Line
+	2600 4350 2900 4350
+Wire Wire Line
+	2600 4450 2900 4450
+$Comp
+L SamacSys_Parts:TB6643KQ,8 MD?
+U 1 1 63520DE5
+P 5250 4450
+AR Path="/63520DE5" Ref="MD?"  Part="1" 
+AR Path="/634FD261/63520DE5" Ref="MD?"  Part="1" 
+F 0 "MD?" H 5592 3585 50  0000 C CNN
+F 1 "TB6643KQ,8" H 5592 3676 50  0000 C CNN
+F 2 "SamacSys_Parts:HSIP7-P-2.54A" H 6000 4550 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11271&prodName=TB6643KQ" H 6000 4450 50  0001 L CNN
+F 4 "Bi-CMOS Integrated Circuit Silicon Monolithic" H 6000 4350 50  0001 L CNN "Description"
+F 5 "" H 6000 4250 50  0001 L CNN "Height"
+F 6 "" H 6000 4150 50  0001 L CNN "RS Part Number"
+F 7 "" H 6000 4050 50  0001 L CNN "RS Price/Stock"
+F 8 "Toshiba" H 6000 3950 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB6643KQ,8" H 6000 3850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5250 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C MT_C?
+U 1 1 63520DEB
+P 5900 4150
+AR Path="/63520DEB" Ref="MT_C?"  Part="1" 
+AR Path="/634FD261/63520DEB" Ref="MT_C?"  Part="1" 
+F 0 "MT_C?" H 6015 4196 50  0000 L CNN
+F 1 "0.1u" H 6015 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5938 4000 50  0001 C CNN
+F 3 "~" H 5900 4150 50  0001 C CNN
+	1    5900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4050 5550 4050
+Wire Wire Line
+	5550 4050 5550 4000
+Wire Wire Line
+	5550 4000 5900 4000
+Wire Wire Line
+	5250 4250 5550 4250
+Wire Wire Line
+	5550 4250 5550 4300
+Wire Wire Line
+	5550 4300 5900 4300
+$Comp
+L power:GND #PWR?
+U 1 1 63520DF7
+P 5250 4150
+AR Path="/63520DF7" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520DF7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5250 3900 50  0001 C CNN
+F 1 "GND" V 5255 4022 50  0000 R CNN
+F 2 "" H 5250 4150 50  0001 C CNN
+F 3 "" H 5250 4150 50  0001 C CNN
+	1    5250 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5550 4350 2    50   Input ~ 0
+MT4_IN2
+Text GLabel 5550 4450 2    50   Input ~ 0
+MT4_IN1
+Wire Wire Line
+	5250 4350 5550 4350
+Wire Wire Line
+	5250 4450 5550 4450
+$Comp
+L SamacSys_Parts:XT60PW-M MT?
+U 1 1 63520E07
+P 3650 2950
+AR Path="/63520E07" Ref="MT?"  Part="1" 
+AR Path="/634FD261/63520E07" Ref="MT?"  Part="1" 
+F 0 "MT?" H 4050 3215 50  0000 C CNN
+F 1 "XT60PW-M" H 4050 3124 50  0000 C CNN
+F 2 "SamacSys_Parts:XT60PWM" H 4300 3050 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 4300 2950 50  0001 L CNN
+F 4 "Socket; DC supply; XT60; male; PIN: 2; on PCBs; THT; Colour: yellow" H 4300 2850 50  0001 L CNN "Description"
+F 5 "8.4" H 4300 2750 50  0001 L CNN "Height"
+F 6 "" H 4300 2650 50  0001 L CNN "RS Part Number"
+F 7 "" H 4300 2550 50  0001 L CNN "RS Price/Stock"
+F 8 "Changzou Amass Elec" H 4300 2450 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT60PW-M" H 4300 2350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2850 3650 2850
+Wire Wire Line
+	3650 2850 3650 2950
+Connection ~ 3250 2850
+Wire Wire Line
+	3250 3150 3650 3150
+Wire Wire Line
+	3650 3150 3650 3050
+Connection ~ 3250 3150
+$Comp
+L SamacSys_Parts:XT60PW-M MT?
+U 1 1 63520E19
+P 3650 4100
+AR Path="/63520E19" Ref="MT?"  Part="1" 
+AR Path="/634FD261/63520E19" Ref="MT?"  Part="1" 
+F 0 "MT?" H 4050 4365 50  0000 C CNN
+F 1 "XT60PW-M" H 4050 4274 50  0000 C CNN
+F 2 "SamacSys_Parts:XT60PWM" H 4300 4200 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 4300 4100 50  0001 L CNN
+F 4 "Socket; DC supply; XT60; male; PIN: 2; on PCBs; THT; Colour: yellow" H 4300 4000 50  0001 L CNN "Description"
+F 5 "8.4" H 4300 3900 50  0001 L CNN "Height"
+F 6 "" H 4300 3800 50  0001 L CNN "RS Part Number"
+F 7 "" H 4300 3700 50  0001 L CNN "RS Price/Stock"
+F 8 "Changzou Amass Elec" H 4300 3600 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT60PW-M" H 4300 3500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4000 3650 4000
+Wire Wire Line
+	3650 4000 3650 4100
+Wire Wire Line
+	3250 4300 3650 4300
+Wire Wire Line
+	3650 4300 3650 4200
+Connection ~ 3250 4000
+Connection ~ 3250 4300
+$Comp
+L SamacSys_Parts:XT60PW-M MT?
+U 1 1 63520E2B
+P 6300 2950
+AR Path="/63520E2B" Ref="MT?"  Part="1" 
+AR Path="/634FD261/63520E2B" Ref="MT?"  Part="1" 
+F 0 "MT?" H 6700 3215 50  0000 C CNN
+F 1 "XT60PW-M" H 6700 3124 50  0000 C CNN
+F 2 "SamacSys_Parts:XT60PWM" H 6950 3050 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 6950 2950 50  0001 L CNN
+F 4 "Socket; DC supply; XT60; male; PIN: 2; on PCBs; THT; Colour: yellow" H 6950 2850 50  0001 L CNN "Description"
+F 5 "8.4" H 6950 2750 50  0001 L CNN "Height"
+F 6 "" H 6950 2650 50  0001 L CNN "RS Part Number"
+F 7 "" H 6950 2550 50  0001 L CNN "RS Price/Stock"
+F 8 "Changzou Amass Elec" H 6950 2450 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT60PW-M" H 6950 2350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2850 6300 2850
+Wire Wire Line
+	6300 2850 6300 2950
+Wire Wire Line
+	5900 3150 6300 3150
+Wire Wire Line
+	6300 3150 6300 3050
+Connection ~ 5900 2850
+Connection ~ 5900 3150
+$Comp
+L SamacSys_Parts:XT60PW-M MT?
+U 1 1 63520E3D
+P 6300 4100
+AR Path="/63520E3D" Ref="MT?"  Part="1" 
+AR Path="/634FD261/63520E3D" Ref="MT?"  Part="1" 
+F 0 "MT?" H 6700 4365 50  0000 C CNN
+F 1 "XT60PW-M" H 6700 4274 50  0000 C CNN
+F 2 "SamacSys_Parts:XT60PWM" H 6950 4200 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 6950 4100 50  0001 L CNN
+F 4 "Socket; DC supply; XT60; male; PIN: 2; on PCBs; THT; Colour: yellow" H 6950 4000 50  0001 L CNN "Description"
+F 5 "8.4" H 6950 3900 50  0001 L CNN "Height"
+F 6 "" H 6950 3800 50  0001 L CNN "RS Part Number"
+F 7 "" H 6950 3700 50  0001 L CNN "RS Price/Stock"
+F 8 "Changzou Amass Elec" H 6950 3600 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT60PW-M" H 6950 3500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4000 6300 4000
+Wire Wire Line
+	6300 4000 6300 4100
+Wire Wire Line
+	5900 4300 6300 4300
+Wire Wire Line
+	6300 4300 6300 4200
+Connection ~ 5900 4000
+Connection ~ 5900 4300
+$Comp
+L SamacSys_Parts:TB6643KQ,8 MD?
+U 1 1 63520E4F
+P 2600 4450
+AR Path="/63520E4F" Ref="MD?"  Part="1" 
+AR Path="/634FD261/63520E4F" Ref="MD?"  Part="1" 
+F 0 "MD?" H 2942 3585 50  0000 C CNN
+F 1 "TB6643KQ,8" H 2942 3676 50  0000 C CNN
+F 2 "SamacSys_Parts:HSIP7-P-2.54A" H 3350 4550 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11271&prodName=TB6643KQ" H 3350 4450 50  0001 L CNN
+F 4 "Bi-CMOS Integrated Circuit Silicon Monolithic" H 3350 4350 50  0001 L CNN "Description"
+F 5 "" H 3350 4250 50  0001 L CNN "Height"
+F 6 "" H 3350 4150 50  0001 L CNN "RS Part Number"
+F 7 "" H 3350 4050 50  0001 L CNN "RS Price/Stock"
+F 8 "Toshiba" H 3350 3950 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB6643KQ,8" H 3350 3850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2600 4450
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4450 2950
+NoConn ~ 4450 3050
+NoConn ~ 4450 4100
+NoConn ~ 4450 4200
+NoConn ~ 7100 2950
+NoConn ~ 7100 3050
+NoConn ~ 7100 4100
+NoConn ~ 7100 4200
+$Comp
+L SamacSys_Parts:XT60PW-M VCC?
+U 1 1 63520E63
+P 6350 5150
+AR Path="/63520E63" Ref="VCC?"  Part="1" 
+AR Path="/634FD261/63520E63" Ref="VCC?"  Part="1" 
+F 0 "VCC?" H 6750 5415 50  0000 C CNN
+F 1 "XT60PW-M" H 6750 5324 50  0000 C CNN
+F 2 "SamacSys_Parts:XT60PWM" H 7000 5250 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 7000 5150 50  0001 L CNN
+F 4 "Socket; DC supply; XT60; male; PIN: 2; on PCBs; THT; Colour: yellow" H 7000 5050 50  0001 L CNN "Description"
+F 5 "8.4" H 7000 4950 50  0001 L CNN "Height"
+F 6 "" H 7000 4850 50  0001 L CNN "RS Part Number"
+F 7 "" H 7000 4750 50  0001 L CNN "RS Price/Stock"
+F 8 "Changzou Amass Elec" H 7000 4650 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT60PW-M" H 7000 4550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6350 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7150 5150
+NoConn ~ 7150 5250
+$Comp
+L power:VCC #PWR?
+U 1 1 63520E6B
+P 5850 5150
+AR Path="/63520E6B" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520E6B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5850 5000 50  0001 C CNN
+F 1 "VCC" V 5865 5277 50  0000 L CNN
+F 2 "" H 5850 5150 50  0001 C CNN
+F 3 "" H 5850 5150 50  0001 C CNN
+	1    5850 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63520E71
+P 5850 5450
+AR Path="/63520E71" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520E71" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5850 5200 50  0001 C CNN
+F 1 "GND" V 5855 5322 50  0000 R CNN
+F 2 "" H 5850 5450 50  0001 C CNN
+F 3 "" H 5850 5450 50  0001 C CNN
+	1    5850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 63520E77
+P 6350 5150
+AR Path="/63520E77" Ref="#FLG?"  Part="1" 
+AR Path="/634FD261/63520E77" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 6350 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 5323 50  0000 C CNN
+F 2 "" H 6350 5150 50  0001 C CNN
+F 3 "~" H 6350 5150 50  0001 C CNN
+	1    6350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 63520E7D
+P 5250 3850
+AR Path="/63520E7D" Ref="#PWR?"  Part="1" 
+AR Path="/634FD261/63520E7D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5250 3700 50  0001 C CNN
+F 1 "+12V" H 5265 4023 50  0000 C CNN
+F 2 "" H 5250 3850 50  0001 C CNN
+F 3 "" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP VCC_CP?
+U 1 1 63520E83
+P 6000 5300
+AR Path="/63520E83" Ref="VCC_CP?"  Part="1" 
+AR Path="/634FD261/63520E83" Ref="VCC_CP?"  Part="1" 
+F 0 "VCC_CP?" H 6118 5346 50  0000 L CNN
+F 1 "CP" H 6118 5255 50  0000 L CNN
+F 2 "SamacSys_Parts:CAPAE660X800N" H 6038 5150 50  0001 C CNN
+F 3 "~" H 6000 5300 50  0001 C CNN
+	1    6000 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5150 6000 5150
+Connection ~ 6350 5150
+Connection ~ 6000 5150
+Wire Wire Line
+	6000 5150 5850 5150
+Wire Wire Line
+	6350 5250 6350 5450
+Wire Wire Line
+	6350 5450 6000 5450
+Connection ~ 6000 5450
+Wire Wire Line
+	6000 5450 5850 5450
+$Comp
+L power:VCC #PWR?
+U 1 1 63536076
+P 9550 2150
+F 0 "#PWR?" H 9550 2000 50  0001 C CNN
+F 1 "VCC" H 9565 2323 50  0000 C CNN
+F 2 "" H 9550 2150 50  0001 C CNN
+F 3 "" H 9550 2150 50  0001 C CNN
+	1    9550 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 2150 9250 2150
+$Comp
+L power:+12V #PWR?
+U 1 1 6353607D
+P 9550 2750
+F 0 "#PWR?" H 9550 2600 50  0001 C CNN
+F 1 "+12V" H 9565 2923 50  0000 C CNN
+F 2 "" H 9550 2750 50  0001 C CNN
+F 3 "" H 9550 2750 50  0001 C CNN
+	1    9550 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D RG2_D?
+U 1 1 63536083
+P 9400 2750
+F 0 "RG2_D?" V 9354 2830 50  0000 L CNN
+F 1 "D" V 9445 2830 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 9400 2750 50  0001 C CNN
+F 3 "~" H 9400 2750 50  0001 C CNN
+	1    9400 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63536089
+P 9550 2350
+F 0 "#PWR?" H 9550 2100 50  0001 C CNN
+F 1 "GND" H 9555 2177 50  0000 C CNN
+F 2 "" H 9550 2350 50  0001 C CNN
+F 3 "" H 9550 2350 50  0001 C CNN
+	1    9550 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6353608F
+P 9550 2550
+F 0 "#PWR?" H 9550 2300 50  0001 C CNN
+F 1 "GND" H 9555 2377 50  0000 C CNN
+F 2 "" H 9550 2550 50  0001 C CNN
+F 3 "" H 9550 2550 50  0001 C CNN
+	1    9550 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 2550
+Wire Wire Line
+	9250 2550 9250 2750
+$Comp
+L Device:C RG2_C?
+U 1 1 63536097
+P 9400 2550
+F 0 "RG2_C?" H 9515 2596 50  0000 L CNN
+F 1 "0.1u" H 9515 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 2400 50  0001 C CNN
+F 3 "~" H 9400 2550 50  0001 C CNN
+	1    9400 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 2350
+Wire Wire Line
+	9250 2150 9250 2350
+$Comp
+L Device:C RG2_C?
+U 1 1 6353609F
+P 9400 2350
+F 0 "RG2_C?" H 9515 2396 50  0000 L CNN
+F 1 "0.33u" H 9515 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 2200 50  0001 C CNN
+F 3 "~" H 9400 2350 50  0001 C CNN
+	1    9400 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 2350 9250 2400
+Wire Wire Line
+	9250 2500 9250 2550
+$Comp
+L Device:D RG2_D?
+U 1 1 635360A7
+P 8000 2400
+F 0 "RG2_D?" V 7954 2480 50  0000 L CNN
+F 1 "D" V 8045 2480 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 8000 2400 50  0001 C CNN
+F 3 "~" H 8000 2400 50  0001 C CNN
+	1    8000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 635360AD
+P 7850 2400
+F 0 "#PWR?" H 7850 2150 50  0001 C CNN
+F 1 "GND" H 7855 2227 50  0000 C CNN
+F 2 "" H 7850 2400 50  0001 C CNN
+F 3 "" H 7850 2400 50  0001 C CNN
+	1    7850 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:NJM7800S-DL1 RG?
+U 1 1 635360BB
+P 9250 2400
+F 0 "RG?" H 9800 2665 50  0000 C CNN
+F 1 "NJM7800S-DL1" H 9800 2574 50  0000 C CNN
+F 2 "SamacSys_Parts:TO-252-3-L1" H 10200 2500 50  0001 L CNN
+F 3 "https://www.njr.co.jp/products/semicon/PDF/NJM7800S_J.pdf" H 10200 2400 50  0001 L CNN
+F 4 "Linear Voltage Regulators 3-Term Pos Reg 25V 1190mW 1.5A" H 10200 2300 50  0001 L CNN "Description"
+F 5 "" H 10200 2200 50  0001 L CNN "Height"
+F 6 "New Japan Radio" H 10200 2100 50  0001 L CNN "Manufacturer_Name"
+F 7 "NJM7800S-DL1" H 10200 2000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "N/A" H 10200 1900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/NJR/NJM7800S-DL1?qs=NniTrqY%252BJ%252BXmKyVtMf8wiQ%3D%3D" H 10200 1800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10200 1700 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 10200 1600 50  0001 L CNN "Arrow Price/Stock"
+	1    9250 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 635360C1
+P 9550 2950
+F 0 "#PWR?" H 9550 2800 50  0001 C CNN
+F 1 "VCC" H 9565 3123 50  0000 C CNN
+F 2 "" H 9550 2950 50  0001 C CNN
+F 3 "" H 9550 2950 50  0001 C CNN
+	1    9550 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 2950 9250 2950
+$Comp
+L power:+12V #PWR?
+U 1 1 635360C8
+P 9550 3550
+F 0 "#PWR?" H 9550 3400 50  0001 C CNN
+F 1 "+12V" H 9565 3723 50  0000 C CNN
+F 2 "" H 9550 3550 50  0001 C CNN
+F 3 "" H 9550 3550 50  0001 C CNN
+	1    9550 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D RG3_D?
+U 1 1 635360CE
+P 9400 3550
+F 0 "RG3_D?" V 9354 3630 50  0000 L CNN
+F 1 "D" V 9445 3630 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 9400 3550 50  0001 C CNN
+F 3 "~" H 9400 3550 50  0001 C CNN
+	1    9400 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 635360D4
+P 9550 3150
+F 0 "#PWR?" H 9550 2900 50  0001 C CNN
+F 1 "GND" H 9555 2977 50  0000 C CNN
+F 2 "" H 9550 3150 50  0001 C CNN
+F 3 "" H 9550 3150 50  0001 C CNN
+	1    9550 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 635360DA
+P 9550 3350
+F 0 "#PWR?" H 9550 3100 50  0001 C CNN
+F 1 "GND" H 9555 3177 50  0000 C CNN
+F 2 "" H 9550 3350 50  0001 C CNN
+F 3 "" H 9550 3350 50  0001 C CNN
+	1    9550 3350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 3350
+Wire Wire Line
+	9250 3350 9250 3550
+$Comp
+L Device:C RG3_C?
+U 1 1 635360E2
+P 9400 3350
+F 0 "RG3_C?" H 9515 3396 50  0000 L CNN
+F 1 "0.1u" H 9515 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3200 50  0001 C CNN
+F 3 "~" H 9400 3350 50  0001 C CNN
+	1    9400 3350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 3150
+Wire Wire Line
+	9250 2950 9250 3150
+$Comp
+L Device:C RG3_C?
+U 1 1 635360EA
+P 9400 3150
+F 0 "RG3_C?" H 9515 3196 50  0000 L CNN
+F 1 "0.33u" H 9515 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3000 50  0001 C CNN
+F 3 "~" H 9400 3150 50  0001 C CNN
+	1    9400 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 3150 9250 3200
+Wire Wire Line
+	9250 3300 9250 3350
+$Comp
+L Device:D RG3_D?
+U 1 1 635360F2
+P 8000 3200
+F 0 "RG3_D?" V 7954 3280 50  0000 L CNN
+F 1 "D" V 8045 3280 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 8000 3200 50  0001 C CNN
+F 3 "~" H 8000 3200 50  0001 C CNN
+	1    8000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 635360F8
+P 7850 3200
+F 0 "#PWR?" H 7850 2950 50  0001 C CNN
+F 1 "GND" H 7855 3027 50  0000 C CNN
+F 2 "" H 7850 3200 50  0001 C CNN
+F 3 "" H 7850 3200 50  0001 C CNN
+	1    7850 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:NJM7800S-DL1 RG?
+U 1 1 63536106
+P 9250 3200
+F 0 "RG?" H 9800 3465 50  0000 C CNN
+F 1 "NJM7800S-DL1" H 9800 3374 50  0000 C CNN
+F 2 "SamacSys_Parts:TO-252-3-L1" H 10200 3300 50  0001 L CNN
+F 3 "https://www.njr.co.jp/products/semicon/PDF/NJM7800S_J.pdf" H 10200 3200 50  0001 L CNN
+F 4 "Linear Voltage Regulators 3-Term Pos Reg 25V 1190mW 1.5A" H 10200 3100 50  0001 L CNN "Description"
+F 5 "" H 10200 3000 50  0001 L CNN "Height"
+F 6 "New Japan Radio" H 10200 2900 50  0001 L CNN "Manufacturer_Name"
+F 7 "NJM7800S-DL1" H 10200 2800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "N/A" H 10200 2700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/NJR/NJM7800S-DL1?qs=NniTrqY%252BJ%252BXmKyVtMf8wiQ%3D%3D" H 10200 2600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10200 2500 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 10200 2400 50  0001 L CNN "Arrow Price/Stock"
+	1    9250 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6353610C
+P 9550 3750
+F 0 "#PWR?" H 9550 3600 50  0001 C CNN
+F 1 "VCC" H 9565 3923 50  0000 C CNN
+F 2 "" H 9550 3750 50  0001 C CNN
+F 3 "" H 9550 3750 50  0001 C CNN
+	1    9550 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 3750 9250 3750
+$Comp
+L power:+12V #PWR?
+U 1 1 63536113
+P 9550 4350
+F 0 "#PWR?" H 9550 4200 50  0001 C CNN
+F 1 "+12V" H 9565 4523 50  0000 C CNN
+F 2 "" H 9550 4350 50  0001 C CNN
+F 3 "" H 9550 4350 50  0001 C CNN
+	1    9550 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D RG4_D?
+U 1 1 63536119
+P 9400 4350
+F 0 "RG4_D?" V 9354 4430 50  0000 L CNN
+F 1 "D" V 9445 4430 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 9400 4350 50  0001 C CNN
+F 3 "~" H 9400 4350 50  0001 C CNN
+	1    9400 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6353611F
+P 9550 3950
+F 0 "#PWR?" H 9550 3700 50  0001 C CNN
+F 1 "GND" H 9555 3777 50  0000 C CNN
+F 2 "" H 9550 3950 50  0001 C CNN
+F 3 "" H 9550 3950 50  0001 C CNN
+	1    9550 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63536125
+P 9550 4150
+F 0 "#PWR?" H 9550 3900 50  0001 C CNN
+F 1 "GND" H 9555 3977 50  0000 C CNN
+F 2 "" H 9550 4150 50  0001 C CNN
+F 3 "" H 9550 4150 50  0001 C CNN
+	1    9550 4150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 4150
+Wire Wire Line
+	9250 4150 9250 4350
+$Comp
+L Device:C RG4_C?
+U 1 1 6353612D
+P 9400 4150
+F 0 "RG4_C?" H 9515 4196 50  0000 L CNN
+F 1 "0.1u" H 9515 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 4000 50  0001 C CNN
+F 3 "~" H 9400 4150 50  0001 C CNN
+	1    9400 4150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 3950
+Wire Wire Line
+	9250 3750 9250 3950
+$Comp
+L Device:C RG4_C?
+U 1 1 63536135
+P 9400 3950
+F 0 "RG4_C?" H 9515 3996 50  0000 L CNN
+F 1 "0.33u" H 9515 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3800 50  0001 C CNN
+F 3 "~" H 9400 3950 50  0001 C CNN
+	1    9400 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 3950 9250 4000
+Wire Wire Line
+	9250 4100 9250 4150
+$Comp
+L power:GND #PWR?
+U 1 1 6353613D
+P 7850 4000
+F 0 "#PWR?" H 7850 3750 50  0001 C CNN
+F 1 "GND" H 7855 3827 50  0000 C CNN
+F 2 "" H 7850 4000 50  0001 C CNN
+F 3 "" H 7850 4000 50  0001 C CNN
+	1    7850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:NJM7800S-DL1 RG?
+U 1 1 6353614B
+P 9250 4000
+F 0 "RG?" H 9800 4265 50  0000 C CNN
+F 1 "NJM7800S-DL1" H 9800 4174 50  0000 C CNN
+F 2 "SamacSys_Parts:TO-252-3-L1" H 10200 4100 50  0001 L CNN
+F 3 "https://www.njr.co.jp/products/semicon/PDF/NJM7800S_J.pdf" H 10200 4000 50  0001 L CNN
+F 4 "Linear Voltage Regulators 3-Term Pos Reg 25V 1190mW 1.5A" H 10200 3900 50  0001 L CNN "Description"
+F 5 "" H 10200 3800 50  0001 L CNN "Height"
+F 6 "New Japan Radio" H 10200 3700 50  0001 L CNN "Manufacturer_Name"
+F 7 "NJM7800S-DL1" H 10200 3600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "N/A" H 10200 3500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/NJR/NJM7800S-DL1?qs=NniTrqY%252BJ%252BXmKyVtMf8wiQ%3D%3D" H 10200 3400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10200 3300 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 10200 3200 50  0001 L CNN "Arrow Price/Stock"
+	1    9250 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 63536151
+P 9550 4550
+F 0 "#PWR?" H 9550 4400 50  0001 C CNN
+F 1 "VCC" H 9565 4723 50  0000 C CNN
+F 2 "" H 9550 4550 50  0001 C CNN
+F 3 "" H 9550 4550 50  0001 C CNN
+	1    9550 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 4550 9250 4550
+$Comp
+L power:+12V #PWR?
+U 1 1 63536158
+P 9550 5150
+F 0 "#PWR?" H 9550 5000 50  0001 C CNN
+F 1 "+12V" H 9565 5323 50  0000 C CNN
+F 2 "" H 9550 5150 50  0001 C CNN
+F 3 "" H 9550 5150 50  0001 C CNN
+	1    9550 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D RG5_D?
+U 1 1 6353615E
+P 9400 5150
+F 0 "RG5_D?" V 9354 5230 50  0000 L CNN
+F 1 "D" V 9445 5230 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 9400 5150 50  0001 C CNN
+F 3 "~" H 9400 5150 50  0001 C CNN
+	1    9400 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63536164
+P 9550 4750
+F 0 "#PWR?" H 9550 4500 50  0001 C CNN
+F 1 "GND" H 9555 4577 50  0000 C CNN
+F 2 "" H 9550 4750 50  0001 C CNN
+F 3 "" H 9550 4750 50  0001 C CNN
+	1    9550 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6353616A
+P 9550 4950
+F 0 "#PWR?" H 9550 4700 50  0001 C CNN
+F 1 "GND" H 9555 4777 50  0000 C CNN
+F 2 "" H 9550 4950 50  0001 C CNN
+F 3 "" H 9550 4950 50  0001 C CNN
+	1    9550 4950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 4950
+Wire Wire Line
+	9250 4950 9250 5150
+$Comp
+L Device:C RG5_C?
+U 1 1 63536172
+P 9400 4950
+F 0 "RG5_C?" H 9515 4996 50  0000 L CNN
+F 1 "0.1u" H 9515 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 4800 50  0001 C CNN
+F 3 "~" H 9400 4950 50  0001 C CNN
+	1    9400 4950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 4750
+Wire Wire Line
+	9250 4550 9250 4750
+$Comp
+L Device:C RG5_C?
+U 1 1 6353617A
+P 9400 4750
+F 0 "RG5_C?" H 9515 4796 50  0000 L CNN
+F 1 "0.33u" H 9515 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 4600 50  0001 C CNN
+F 3 "~" H 9400 4750 50  0001 C CNN
+	1    9400 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 4750 9250 4800
+Wire Wire Line
+	9250 4900 9250 4950
+$Comp
+L Device:D RG5_D?
+U 1 1 63536182
+P 8000 4800
+F 0 "RG5_D?" V 7954 4880 50  0000 L CNN
+F 1 "D" V 8045 4880 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 8000 4800 50  0001 C CNN
+F 3 "~" H 8000 4800 50  0001 C CNN
+	1    8000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63536188
+P 7850 4800
+F 0 "#PWR?" H 7850 4550 50  0001 C CNN
+F 1 "GND" H 7855 4627 50  0000 C CNN
+F 2 "" H 7850 4800 50  0001 C CNN
+F 3 "" H 7850 4800 50  0001 C CNN
+	1    7850 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:NJM7800S-DL1 RG?
+U 1 1 63536196
+P 9250 4800
+F 0 "RG?" H 9800 5065 50  0000 C CNN
+F 1 "NJM7800S-DL1" H 9800 4974 50  0000 C CNN
+F 2 "SamacSys_Parts:TO-252-3-L1" H 10200 4900 50  0001 L CNN
+F 3 "https://www.njr.co.jp/products/semicon/PDF/NJM7800S_J.pdf" H 10200 4800 50  0001 L CNN
+F 4 "Linear Voltage Regulators 3-Term Pos Reg 25V 1190mW 1.5A" H 10200 4700 50  0001 L CNN "Description"
+F 5 "" H 10200 4600 50  0001 L CNN "Height"
+F 6 "New Japan Radio" H 10200 4500 50  0001 L CNN "Manufacturer_Name"
+F 7 "NJM7800S-DL1" H 10200 4400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "N/A" H 10200 4300 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/NJR/NJM7800S-DL1?qs=NniTrqY%252BJ%252BXmKyVtMf8wiQ%3D%3D" H 10200 4200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10200 4100 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 10200 4000 50  0001 L CNN "Arrow Price/Stock"
+	1    9250 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D RG4_D?
+U 1 1 6353619C
+P 8000 4000
+F 0 "RG4_D?" V 7954 4080 50  0000 L CNN
+F 1 "D" V 8045 4080 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3618X108N" H 8000 4000 50  0001 C CNN
+F 3 "~" H 8000 4000 50  0001 C CNN
+	1    8000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 635361A2
+P 8100 5550
+F 0 "#FLG?" H 8100 5625 50  0001 C CNN
+F 1 "PWR_FLAG" H 8100 5723 50  0000 C CNN
+F 2 "" H 8100 5550 50  0001 C CNN
+F 3 "~" H 8100 5550 50  0001 C CNN
+	1    8100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 635361A8
+P 8100 5550
+F 0 "#PWR?" H 8100 5400 50  0001 C CNN
+F 1 "+12V" H 8115 5723 50  0000 C CNN
+F 2 "" H 8100 5550 50  0001 C CNN
+F 3 "" H 8100 5550 50  0001 C CNN
+	1    8100 5550
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

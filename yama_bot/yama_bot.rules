@@ -1,0 +1,108 @@
+
+(rules PCB yama_bot
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3812)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2000:1000_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_2000:1000_um" "Via[0-1]_2000:1000_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-kicad_default" "Via[0-1]_2000:1000_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +3V3 "USB_TX" "USB_RX" DTR "ENC1_X" "ENC1_A" +5V
+    "ENC1_B" "ENC2_X" "ENC2_A" "ENC2_B" "Net-(ESP32-WROOM1-Pad38)" "IMU_SDA" "IMU_SCL" IO14
+    IO13 IO12 IO11 IO10 IO9 IO8 RTS "MT1_IN2"
+    "MT1_IN1" IO6 IO5 IO4 IO3 IO2 IO1 "MT2_IN2"
+    "MT2_IN1" "MT3_IN2" "MT3_IN1" "MT4_IN2" "MT4_IN1" +12V "Net-(PW_LED1-Pad2)" "Net-(RG2-Pad3)"
+    "Net-(RG2-Pad2)" VCC "Net-(RG3-Pad3)" "Net-(RG3-Pad2)" "Net-(MD1-Pad8)" "Net-(MD1-Pad7)" "Net-(MD1-Pad6)" "Net-(MD2-Pad8)"
+    "Net-(MD2-Pad7)" "Net-(MD2-Pad6)" "Net-(MD3-Pad8)" "Net-(MD3-Pad7)" "Net-(MD3-Pad6)" "Net-(MD4-Pad8)" "Net-(MD4-Pad7)" "Net-(MD4-Pad6)"
+    "Net-(DTR_Q1-Pad2)" "Net-(DTR_Q1-Pad1)" "Net-(UD1-Pad6)" "Net-(UD1-Pad5)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class class1
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
